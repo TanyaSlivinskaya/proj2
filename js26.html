@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        img { cursor: pointer;}
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="pic">
+
+        <!-- <img src="images/1.jpg">
+        <img src="images/2.jpg">
+        <img src="images/3.jpg"> -->
+
+    </div>
+
+    <div id="big"></div>
+
+    <script>
+
+        let s = '', s1 = '';
+
+        for (i=1; i<=3; i++) 
+        s += `<img onclick="bigp(${i})" src="images/${i}.jpg">`;
+
+        pic.innerHTML = s;
+
+        function bigp(p) {
+            s1 = `<img onclick="big.innerHTML =''" width="800" src="images/${p}.jpg">`;
+            big.innerHTML = s1;
+        }
+
+
+
+
+    </script>
+
+
+
+
+</body>
+</html>

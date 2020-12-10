@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- C = (M!+N!) / (M+1)! -->
+
+        <!-- 3! = 1 * 2 * 3; -->
+
+    <script>
+
+        M = 5;
+        N = 3;
+
+        function ff(k) {
+           let t=1; 
+           for (i=1; i<=k; i++) {
+               t *= i;
+           } 
+           return t;
+        }
+
+
+
+        C = (ff(M) + ff(N)) / ff(M+1);
+        alert(C);
+
+    </script>
+
+
+
+</body>
+</html>

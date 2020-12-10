@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Мотоды массива -->
+
+    <script>
+
+        // Метод pop() удалить в конце
+        // let fruits = ['Яблоко','Апельсин','Груша'];
+        // let n = fruits.pop(); // 'Груша'
+
+        // alert(n);
+        // alert(fruits);
+
+
+        // push() добавить в конец
+        // let fruits = ['Яблоко','Апельсин'];
+        // fruits.push('Манго');
+        // alert(fruits);
+
+
+        // shift() удалить в начале
+        // let fruits = ['Яблоко','Апельсин','Груша'];
+        // let n = fruits.shift(); 
+        // alert(n);
+        // alert(fruits);
+
+        // unshift() добавить в начало
+        // let fruits = ['Яблоко','Апельсин'];
+        // fruits.unshift('Манго');
+        // alert(fruits);
+
+
+        // Сформировать массив из 3-х элементов
+
+        // let arr1 = [];
+
+        // for (i=0; i<3; i++) {
+        // n = prompt(`Введите ${i+1}-ый элемент массива`);
+        // arr1.push(n);
+        // };
+
+        // alert(arr1);
+
+
+        // split(); преобразует строку в массив
+        // let names = 'Маша, Петя, Марина, Василий';
+        // let arr = names.split(', ');
+        // alert(arr);
+        // for (i=0; i<arr.length; i++) {
+        // alert(`Вам сообщение, ${arr[i]}`);
+        //  }   
+        
+        // join() преобразует массив в строку
+        // let names = ['Маша', 'Петя', 'Марина', 'Василий'];
+        // let s = names.join(' - ');
+        // alert(s);
+
+
+        // splice(); заменяет часть элементов массива
+        // let arr = [1,2,3,4,5];
+        // let s = arr.splice(1,2,2.1,3.5);
+        // alert(arr); // 1,2.1,3.5,4,5
+        // aler(s);
+
+        // slice(); копирует часть массива
+        // let arr = ['Маша', 'Петя', 'Марина', 'Василий'];   
+        // let arr1 = arr.slice(1,2); // скопирует элемент 1 не включая 2    
+        // alert(arr1);  
+        // alert(arr);   
+
+        // reverse() меняте поряд элементов на обратный
+        // let arr = [1,2,3];
+        // arr.reverse();
+        // alert(arr);
+
+        // concat() объединяет массивы   
+        // let arr = [1,2];    
+        // let arr1 = arr.concat(3,4,'Вася',true);
+        // alert(arr1);
+
+        
+        // forEach()
+        // let arr =  ['Яблоко','Апельсин','Груша'];
+        // arr.forEach(
+        // function(item, i, arr) {
+        // alert(`${i}: ${item} (массив: ${arr})`);
+        //     }
+
+        // )   
+
+
+
+
+
+        //   Заменить в предложении 2 слова
+        //   "Минск - большой, чистый город"
+        //   "Минск - крупный, современный город"  
+
+    // 1. Объявить строку  "Минск - большой, чистый город"
+    // 2. Преобразовать строку в массив
+    // 3. Заменить 2 элемента массива
+    // 4. Преобразовать массив в строку
+    // 5. Вывести полученнцю строку в alert 
+
+    //   split, splice, join  
+    let str = "Минск - большой, чистый город";
+    let arr = str.split(' ');
+    let s = arr.splice(2,2,'крупный','современный');
+    let str1 = arr.join(' ');
+    alert(str1); 
+    alert(s);       
+
+
+    </script>
+
+
+</body>
+</html>
